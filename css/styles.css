@@ -91,6 +91,10 @@ a {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    bottom: -1px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -128,6 +132,9 @@ a {
     letter-spacing: 0.02em;
     display: flex;
     align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .link-auth-nav:hover,
@@ -144,6 +151,9 @@ a {
 .auth-nav-cont {
     margin-right: 10px;
     fill: var(--primery-text-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
  
 /* line */
@@ -365,7 +375,7 @@ a {
 
 }
 .box-element-text {
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
@@ -374,13 +384,11 @@ a {
     padding-top: 27px;
     padding-bottom: 27px;
     margin: 0;
-    
-    transform: translate(0, -100%);
-
+    bottom: 0;
+        
     position: absolute;
     width: 100%;
     
-
     color: var(--title-text-color);
     background: rgba(47, 48, 58, 0.8);
 
@@ -450,11 +458,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
  }
 
 .workers-item-link {
     fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 .workers-soc-link:hover,
 .workers-soc-link:focus
@@ -510,8 +524,8 @@ a {
     overflow: hidden;
 
 }
-.flex-element:hover .move-text,
-.flex-element:focus .move-text {
+.feature-element:hover .move-text,
+.feature-element:focus .move-text {
     transform: translateY(0);
 
 }
@@ -559,8 +573,14 @@ a {
     gap: 30px;
     }
 .flex-element {
-    flex-basis: calc((100% - 60px) / 3)
+    flex-basis: calc((100% - 60px) / 3);
+    
     }
+.feature-element {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .feature-element:hover,
 .feature-element:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -596,6 +616,14 @@ a {
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.client-item-link {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
@@ -632,6 +660,10 @@ a {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       
 }
 .hero .button:hover,
@@ -658,6 +690,10 @@ a {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        
 }
 .button-secondary:hover,
@@ -706,10 +742,13 @@ a {
 .desc {margin: 0;} 
 
 .link {
-   color: rgba(255, 255, 255, 0.6);
-   font-style: normal;
-   font-size: 14px;
-   line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus {
@@ -765,6 +804,9 @@ a {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item-link {
